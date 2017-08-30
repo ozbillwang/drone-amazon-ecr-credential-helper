@@ -3,6 +3,9 @@ language: go
 go:
   - master
 
+services:
+  - docker
+
 script: 
   - cd amazon-ecr-credential-helper
   - make docker
